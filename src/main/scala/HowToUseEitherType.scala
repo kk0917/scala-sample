@@ -26,6 +26,9 @@ trait MyApp extends App {
     targetMessage.headOption.toRight(s"$messageId not found.")
   })
   val messageList2: Seq[Message] = result.collect { case Right(message) => message }
+  if (messageIds.length != messageList2.length) {
+    // エラー処理
+  }
 
 
   // sample
