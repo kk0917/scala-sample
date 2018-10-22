@@ -1,7 +1,7 @@
 import scala.collection.mutable.ListBuffer
 
 class Message
-trait MyApp extends App {
+trait HowToUseEitherType extends App {
   type MessageId
   case class MessageFindForm(messageId: MessageId)
   object MessageService {
